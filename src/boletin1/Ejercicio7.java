@@ -37,7 +37,7 @@ public class Ejercicio7 {
 			} else {
 				cifras = 5;
 				System.out.println("El numero tiene " + cifras + " cifras");
-			} else {
+		} else {
 			System.out.println("El numero introducido no se encuentra entre el 0 y el 99999");
 		}
 		/*Cerramos el Scanner*/
