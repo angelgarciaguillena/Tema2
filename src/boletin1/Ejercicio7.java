@@ -6,7 +6,7 @@ public class Ejercicio7 {
 	public static void main(String[] args) {
 		
 		/*Creamos una variable para almacenar el numero del usuario*/
-		double numero;
+		int numero;
 		
 		/*Creamos una variable para almacenar el numero de cifras*/
 		int cifras;
@@ -18,10 +18,10 @@ public class Ejercicio7 {
 		System.out.println("Introduce un numero:");
 		
 		/*Lo leemos*/
-		numero = sc.nextDouble();
+		numero = sc.nextInt();
 		
 		/*Creamos una condicion para indicar las cifras que tiene el numero*/
-		if (numero >= 99999 && numero <= 0) {
+		if (numero <= 99999 && numero >= 0) 
 			if (numero < 10 && numero >= 0) {
 				cifras = 1;
 				System.out.println("El numero tiene " + cifras + " cifras");
@@ -31,11 +31,15 @@ public class Ejercicio7 {
 			} else if (numero > 100 && numero < 1000) {
 				cifras = 3;
 				System.out.println("El numero tiene " + cifras + " cifras");
-			} 
-		} else {
+			} else if (numero > 1000 && numero < 10000) {
+				cifras = 4;
+				System.out.println("El numero tiene " + cifras + " cifras");
+			} else {
+				cifras = 5;
+				System.out.println("El numero tiene " + cifras + " cifras");
+			} else {
 			System.out.println("El numero introducido no se encuentra entre el 0 y el 99999");
 		}
-		
 		/*Cerramos el Scanner*/
 		sc.close();
 	}
