@@ -36,19 +36,19 @@ public class Ejercicio9 {
 		eleccion2 = sc.nextLine();
 		
 		/*Creamos la condicional para averiguar quien de los dos jugadores ha ganado*/
-		if (eleccion1.equals(eleccion2)) {
+		if (eleccion1.equalsIgnoreCase(eleccion2)) {
 			System.out.println("Empate");
-		} else if (eleccion1.equals(PIEDRA) && eleccion2.equals(PAPEL)) {
+		} else if (eleccion1.equalsIgnoreCase(PIEDRA) && eleccion2.equalsIgnoreCase(PAPEL)) {
 			System.out.println("Jugador 2 gana");
-		} else if (eleccion1.equals(PIEDRA) && eleccion2.equals(TIJERAS)) {
+		} else if (eleccion1.equalsIgnoreCase(PIEDRA) && eleccion2.equalsIgnoreCase(TIJERAS)) {
 			System.out.println("Jugador 1 gana");
-		} else if (eleccion1.equals(PAPEL) && eleccion2.equals(PIEDRA)) {
+		} else if (eleccion1.equalsIgnoreCase(PAPEL) && eleccion2.equalsIgnoreCase(PIEDRA)) {
 			System.out.println("Jugador 1 gana");
-		} else if (eleccion1.equals(PAPEL) && eleccion2.equals(TIJERAS)) {
+		} else if (eleccion1.equalsIgnoreCase(PAPEL) && eleccion2.equalsIgnoreCase(TIJERAS)) {
 			System.out.println("Jugador 2 gana");
-		} else if (eleccion1.equals(TIJERAS) && eleccion2.equals(PIEDRA)) {
+		} else if (eleccion1.equalsIgnoreCase(TIJERAS) && eleccion2.equalsIgnoreCase(PIEDRA)) {
 			System.out.println("Jugador 2 gana");
-		} else if (eleccion1.equals(TIJERAS) && eleccion2.equals(PAPEL)) {
+		} else if (eleccion1.equalsIgnoreCase(TIJERAS) && eleccion2.equalsIgnoreCase(PAPEL)) {
 			System.out.println("Jugador 1 gana");
 		}
 		
