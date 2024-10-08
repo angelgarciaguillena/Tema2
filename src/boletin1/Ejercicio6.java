@@ -54,6 +54,11 @@ public class Ejercicio6 {
 			x = -b;
 			System.out.println("La solucion es " + x);
 			
+		/*Si a es igual a 0 se hace la ecuacion de primer grado*/
+		} else if (a == 0) {
+			x = (c * -1) / b;
+			System.out.println("La solucion es " + x);
+			
 		/*Si el valor del discriminante es mayor a 0 tiene dos soluciones*/
 		}else if (discriminante > 0) {
 			x = (-b + Math.sqrt(discriminante)) / (2 * a);
@@ -61,7 +66,7 @@ public class Ejercicio6 {
 			System.out.println("Las soluciones son " + x + " y " + x2);
 			
 		/*Si el valor es menor a 0 no tiene ninguna solucion*/
-		}else if (discriminante < 0) {
+		} else if (discriminante < 0) {
 			System.out.println("No hay solucion");
 		}
 		
