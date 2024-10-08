@@ -12,13 +12,13 @@ public class Ejercicio9 {
 		String eleccion2;
 		
 		/*Creamos una variable que almacena la palabra piedra*/
-		String PIEDRA = "Piedra";
+		final String PIEDRA = "Piedra";
 		
 		/*Creamos una variable que almacena la palabra papel*/
-		String PAPEL = "Papel";
+		final String PAPEL = "Papel";
 		
 		/*Creamos una variable que almacena la palabra tijeras*/
-		String TIJERAS = "Tijeras";
+		final String TIJERAS = "Tijeras";
 		
 		/*Creamos un Scanner*/
 		Scanner sc = new Scanner(System.in);
