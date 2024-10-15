@@ -48,7 +48,7 @@ public class Ejercicio8 {
 			System.out.println("El mes introducido tiene " + dias + " dias");
 			}
 		case 2 -> {
-			System.out.println (dias = bisiesto ? 29 : 28);
+			System.out.println ("El mes introducido tiene " + (dias = bisiesto ? 29 : 28) + " dias");
 			}
 		default -> {
 			System.out.println("Mes incorrecto");
