@@ -6,7 +6,7 @@ public class Ejercicio2 {
 	public static void main(String[] args) {
 		
 		/*Creamos una variable para acumular el numero*/
-		int numero = 0;
+		int numero;
 		
 		/*Creamos una variable que servira como contador de numeros*/
 		int contador = 0;
