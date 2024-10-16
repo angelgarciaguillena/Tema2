@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class Ejercicio5 {
 	public static void main(String[] args) {
 		
-		/*Creamos una variable para almacenar el numero introducido por el usuario*/
-		int numero;
+		/*Creamos una variable para almacenar la edad de los usuarios*/
+		int edad;
 		
 		/*Creamos una variable para almacenar la suma*/
 		int suma = 0;
@@ -24,19 +24,19 @@ public class Ejercicio5 {
 		System.out.println("Introduce tu edad:");
 		
 		/*Lo leemos*/
-		numero = sc.nextInt();
+		edad = sc.nextInt();
 		
 		/*Creamos un bucle para que se introduzcan numeros hasta que salga uno negativo*/
-		while (numero >= 0) {
+		while (edad >= 0) {
 			
 			/*Hacemos que el contador vaya sumando los numeros*/
 			contador++;
 			
-			/*Hacemos que los numeros se vayan sumando*/
-			suma = suma + numero;
+			/*Hacemos que las edades se vayan sumando*/
+			suma = suma + edad;
 			
 			/*Si los alumnos son mayores de 18 se cuentan en otro contador*/
-			if(numero >= 18) {
+			if(edad >= 18) {
 				contadorMayores++;				
 			}
 			
@@ -44,7 +44,7 @@ public class Ejercicio5 {
 			System.out.println("Introduce tu edad:");
 			
 			/*Lo leemos*/
-			numero = sc.nextInt();
+			edad = sc.nextInt();
 			
 		}
 		
