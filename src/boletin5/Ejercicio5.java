@@ -26,8 +26,8 @@ public class Ejercicio5 {
 		
 		/*Creamos un bucle do while para que el ordenador vaya introduciendo numeros aleatorios dentro del rango mientras el numerp introducido sea diferente al del ordenador*/
 		do {
-			numero = rand.nextInt(1,101);/*Hacemos que el programa introduzca numeros randoms*/
-			System.out.println(numero);
+			numero = rand.nextInt(1,101);/*Hacemos que el programa introduzca un numero random*/
+			System.out.println(numero);/*Mostramos el numero random al usuario*/
 			if (numeroUsuario > numero) {/*Si el numero del usuario es mayor al introducido*/
 				System.out.println("El numero es mayor al introducido");
 			} else if (numeroUsuario < numero) {/*Si el numero del usuario es menor al introducido*/
