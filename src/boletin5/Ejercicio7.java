@@ -54,8 +54,6 @@ public class Ejercicio7 {
 				System.out.println(num1 / num2);
 			case "E" ->
 				System.out.println("Has salido del programa");
-			default ->
-				System.out.println("Opcion incorrecta");
 			}
 		} while (!eleccion.equalsIgnoreCase("E"));
 			
