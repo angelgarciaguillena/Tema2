@@ -12,6 +12,12 @@ public class Ejercicio5 {
 		/*Creamos una variable para almacenar el numero introducido por el usuario que sera la respuesta correcta*/
 		int numeroUsuario;
 		
+		/*Creamos una variable que sirva como maximo*/
+		int maximo = 101;
+		
+		/*Creamos una variable que sirva como minimo*/
+		int minimo = 1;
+		
 		/*Creamos una clase Random*/
 		Random rand = new Random();
 				
@@ -26,12 +32,14 @@ public class Ejercicio5 {
 		
 		/*Creamos un bucle do while para que el ordenador vaya introduciendo numeros aleatorios dentro del rango mientras el numerp introducido sea diferente al del ordenador*/
 		do {
-			numero = rand.nextInt(1,101);/*Hacemos que el programa introduzca un numero random*/
+			numero = rand.nextInt(minimo,maximo);/*Hacemos que el programa introduzca un numero random*/
 			System.out.println(numero);/*Mostramos el numero random al usuario*/
-			if (numeroUsuario > numero) {/*Si el numero del usuario es mayor al introducido*/
+			if (numeroUsuario > numero) {/*Si el numero del usuario es mayor al introducido, el minimo del numero se vera cambiado por el numero aleatorio sumandole 1, ya que si no es ese numero se podra repetir*/
 				System.out.println("El numero es mayor al introducido");
-			} else if (numeroUsuario < numero) {/*Si el numero del usuario es menor al introducido*/
+				minimo = numero + 1;
+			} else if (numeroUsuario < numero) {/*Si el numero del usuario es menor al introducido, el maximo del numero se vera cambiado por el numero aleatorio*/
 				System.out.println("El numero es menor al introducido");
+				maximo = numero;
 			} else if (numeroUsuario == numero) {/*Si el numero del usuario es igual al introducido*/
 				System.out.println("Respuesta correcta");
 			}
