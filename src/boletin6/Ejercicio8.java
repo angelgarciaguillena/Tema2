@@ -29,7 +29,7 @@ public class Ejercicio8 {
 		/*Si el numero A es igual al numero B*/
 		if (numeroA == numeroB) {
 			System.out.println("Los numeros son iguales");
-		} else if (numeroA == numeroB + 1 || numeroB == numeroA + 1){ /*Si no es ninguno de los casos anteriores*/
+		} else if (numeroA == numeroB + 1 || numeroB == numeroA + 1){ /*Si el numero A es igual al numero B mas 1 o el numero B es igual al numero A mas 1*/
 			System.out.println("El numero no tiene intermedio");
 		} else if (numeroA < numeroB) { /*Si el numero A es menor al numero B*/
 			
