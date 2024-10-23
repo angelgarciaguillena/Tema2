@@ -39,7 +39,7 @@ public class Ejercicio8 {
 			}
 		} else if (numeroB < numeroA) { /*Si el numero B es menor al numero A*/
 			
-			/*Creamos un bucle para imprimir los numeros desde el numero A hasta el numero B*/
+			/*Creamos un bucle para imprimir los numeros desde el numero B hasta el numero A*/
 			for (int i = numeroB + 1 ; i != numeroA ; i++) {
 				System.out.println(i);
 			}
