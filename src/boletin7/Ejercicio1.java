@@ -92,7 +92,6 @@ public class Ejercicio1 {
 			if (horas == 24) {
 				horas = 0;
 			}
-
 		}
 		
 		/*Mostramos el resultado al usuario*/
