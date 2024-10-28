@@ -73,7 +73,7 @@ public class Ejercicio1 {
 		/*Creamos un bucle for para ir sumando 1 a los segundos hasta que sea mayor que el numero del incremento*/
 		for (int i = 1; iteracion <= incremento; iteracion++) {
 			
-			/*Sumamos  el valor del bucle a segundos*/
+			/*Sumamos  1 a los segundos*/
 			segundos += i;
 			
 			/*Si los segundos son mayores a 60*/
