@@ -20,7 +20,7 @@ public class Ejercicio7 {
 		/*Leemos el numero del usuario*/
 		numero = sc.nextInt();
 		
-		/*Creamos un bucle forinicializando una variable omo contador y hasta que la variable no 
+		/*Creamos un bucle for inicializando una variable como contador y hasta que la variable no 
 		sea mayor que el numero introducido se va a repetir y le voy sumando 1*/
 		for (int i = 1 ; i <= numero ; i++) {
 			
