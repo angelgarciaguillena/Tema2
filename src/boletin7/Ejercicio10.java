@@ -93,8 +93,7 @@ public class Ejercicio10 {
 		 * Mostramos el resultado al usuario, si el numero es igual al numero invertido
 		 * el numero sera capicua sino no sera capicua
 		 */
-		System.out.println(
-				numero == invertido ? "El numero introducido es capicua" : "El numero introducido no es capicua");
+		System.out.println(numero == invertido ? "El numero introducido es capicua" : "El numero introducido no es capicua");
 
 		/* Cerramos el Scanner */
 		sc.close();
