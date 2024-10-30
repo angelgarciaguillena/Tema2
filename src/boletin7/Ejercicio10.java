@@ -62,7 +62,6 @@ public class Ejercicio10 {
 				error = true;
 				sc.nextLine();
 			}
-
 		} while (error);
 
 		/* Hacemos que el numero cambiado tenga el mismo valor que el numero original */
