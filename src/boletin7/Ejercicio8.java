@@ -53,12 +53,15 @@ public class Ejercicio8 {
 				/* Añadimos un assert para que el usuario no introduzca numeros negativos */
 				assert numero >= 0 : "Error: El numero introducido es negativo";
 				error = false;
-
+				
+			/*Notificamos al usuario si el error es que ha introducido un negativo*/
 			} catch (AssertionError e) {
 
 				/* Mostramos el mensaje de error al usuario */
 				System.err.println(e.getMessage());
 				error = true;
+				
+			/*Notificamos al usuario si el error es que el numero introducido no es entero*/
 			} catch (InputMismatchException e) {
 
 				/* Mostramos el mensaje de error al usuario */
@@ -106,16 +109,20 @@ public class Ejercicio8 {
 					assert numero >= 0 : "Error: El numero introducido es negativo";
 					error = false;
 					
+				/*Notificamos al usuario si el error es que ha introducido un negativo*/
 				} catch (AssertionError e) {
+					
 					/* Mostramos el mensaje de error al usuario */
 					System.err.println(e.getMessage());
 					error = true;
 					
+				/*Notificamos al usuario si el error es que el numero introducido no es entero*/
 				} catch (InputMismatchException e) {
+					
 					/* Mostramos el mensaje de error al usuario */
 					System.err.println("Error: El numero introducido no es entero");
-					error = true;
 					sc.nextLine();
+					error = true;
 				}
 			} while (error);
 		}
